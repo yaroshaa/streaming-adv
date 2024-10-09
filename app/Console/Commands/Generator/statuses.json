@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "new",
+        "remote_id": 1
+    },
+    {
+        "id": 2,
+        "name": "waiting for payment",
+        "remote_id": 2
+    },
+    {
+        "id": 3,
+        "name": "paid",
+        "remote_id": 3
+    },
+    {
+        "id": 4,
+        "name": "waiting for delivery",
+        "remote_id": 4
+    },
+    {
+        "id": 5,
+        "name": "delivery",
+        "remote_id": 5
+    },
+    {
+        "id": 6,
+        "name": "delivered",
+        "remote_id": 6
+    },
+    {
+        "id": 7,
+        "name": "closed",
+        "remote_id": 7
+    }
+]

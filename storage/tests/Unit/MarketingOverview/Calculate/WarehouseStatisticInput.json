@@ -1,0 +1,1928 @@
+{
+    "statistics": [
+        {
+            "date": "2021-05-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "8",
+            "in_packing": "312",
+            "open": "86",
+            "awaiting_stock": "424"
+        },
+        {
+            "date": "2021-05-02",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "4",
+            "market_name": "comfyballs.no",
+            "station": "7",
+            "in_packing": "340",
+            "open": "97",
+            "awaiting_stock": "51"
+        },
+        {
+            "date": "2021-05-03",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "15",
+            "in_packing": "386",
+            "open": "237",
+            "awaiting_stock": "311"
+        },
+        {
+            "date": "2021-05-04",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "4",
+            "in_packing": "42",
+            "open": "234",
+            "awaiting_stock": "364"
+        },
+        {
+            "date": "2021-05-05",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "13",
+            "in_packing": "73",
+            "open": "339",
+            "awaiting_stock": "241"
+        },
+        {
+            "date": "2021-05-06",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "3",
+            "in_packing": "109",
+            "open": "290",
+            "awaiting_stock": "495"
+        },
+        {
+            "date": "2021-05-07",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "4",
+            "market_name": "comfyballs.no",
+            "station": "12",
+            "in_packing": "480",
+            "open": "225",
+            "awaiting_stock": "50"
+        },
+        {
+            "date": "2021-05-08",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "9",
+            "in_packing": "452",
+            "open": "408",
+            "awaiting_stock": "271"
+        },
+        {
+            "date": "2021-05-09",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "6",
+            "in_packing": "172",
+            "open": "319",
+            "awaiting_stock": "443"
+        },
+        {
+            "date": "2021-05-10",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "4",
+            "market_name": "comfyballs.no",
+            "station": "1",
+            "in_packing": "480",
+            "open": "187",
+            "awaiting_stock": "179"
+        },
+        {
+            "date": "2021-05-11",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "8",
+            "market_name": "weightless.no",
+            "station": "1",
+            "in_packing": "336",
+            "open": "449",
+            "awaiting_stock": "331"
+        },
+        {
+            "date": "2021-05-12",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "5",
+            "in_packing": "292",
+            "open": "310",
+            "awaiting_stock": "89"
+        },
+        {
+            "date": "2021-05-13",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "3",
+            "in_packing": "39",
+            "open": "215",
+            "awaiting_stock": "58"
+        },
+        {
+            "date": "2021-05-14",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "8",
+            "market_name": "weightless.no",
+            "station": "1",
+            "in_packing": "339",
+            "open": "382",
+            "awaiting_stock": "320"
+        },
+        {
+            "date": "2021-05-15",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "7",
+            "in_packing": "44",
+            "open": "252",
+            "awaiting_stock": "398"
+        },
+        {
+            "date": "2021-05-16",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "6",
+            "in_packing": "443",
+            "open": "351",
+            "awaiting_stock": "228"
+        },
+        {
+            "date": "2021-05-17",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "13",
+            "in_packing": "112",
+            "open": "376",
+            "awaiting_stock": "482"
+        },
+        {
+            "date": "2021-05-18",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "1",
+            "market_name": "Tights.no",
+            "station": "9",
+            "in_packing": "171",
+            "open": "35",
+            "awaiting_stock": "93"
+        },
+        {
+            "date": "2021-05-19",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "11",
+            "in_packing": "238",
+            "open": "277",
+            "awaiting_stock": "39"
+        },
+        {
+            "date": "2021-05-20",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "11",
+            "in_packing": "251",
+            "open": "107",
+            "awaiting_stock": "129"
+        },
+        {
+            "date": "2021-05-21",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "15",
+            "in_packing": "332",
+            "open": "259",
+            "awaiting_stock": "421"
+        },
+        {
+            "date": "2021-05-22",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "4",
+            "in_packing": "83",
+            "open": "495",
+            "awaiting_stock": "409"
+        },
+        {
+            "date": "2021-05-23",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "15",
+            "in_packing": "395",
+            "open": "350",
+            "awaiting_stock": "15"
+        },
+        {
+            "date": "2021-05-24",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "8",
+            "market_name": "weightless.no",
+            "station": "8",
+            "in_packing": "344",
+            "open": "67",
+            "awaiting_stock": "105"
+        },
+        {
+            "date": "2021-05-25",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "15",
+            "in_packing": "298",
+            "open": "120",
+            "awaiting_stock": "349"
+        },
+        {
+            "date": "2021-05-26",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "3",
+            "in_packing": "365",
+            "open": "314",
+            "awaiting_stock": "336"
+        },
+        {
+            "date": "2021-05-27",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "1",
+            "market_name": "Tights.no",
+            "station": "5",
+            "in_packing": "347",
+            "open": "166",
+            "awaiting_stock": "220"
+        },
+        {
+            "date": "2021-05-28",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "11",
+            "in_packing": "400",
+            "open": "498",
+            "awaiting_stock": "396"
+        },
+        {
+            "date": "2021-05-29",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "1",
+            "market_name": "Tights.no",
+            "station": "11",
+            "in_packing": "387",
+            "open": "66",
+            "awaiting_stock": "391"
+        },
+        {
+            "date": "2021-05-30",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "3",
+            "in_packing": "136",
+            "open": "284",
+            "awaiting_stock": "277"
+        },
+        {
+            "date": "2021-05-31",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "8",
+            "market_name": "weightless.no",
+            "station": "10",
+            "in_packing": "120",
+            "open": "326",
+            "awaiting_stock": "295"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "3",
+            "in_packing": "250",
+            "open": "117",
+            "awaiting_stock": "84"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "6",
+            "in_packing": "86",
+            "open": "295",
+            "awaiting_stock": "256"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "7",
+            "in_packing": "310",
+            "open": "351",
+            "awaiting_stock": "405"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "8",
+            "in_packing": "655",
+            "open": "511",
+            "awaiting_stock": "629"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "11",
+            "in_packing": "185",
+            "open": "58",
+            "awaiting_stock": "273"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "1",
+            "in_packing": "98",
+            "open": "494",
+            "awaiting_stock": "99"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "5",
+            "in_packing": "289",
+            "open": "51",
+            "awaiting_stock": "340"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "6",
+            "in_packing": "467",
+            "open": "23",
+            "awaiting_stock": "140"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "8",
+            "in_packing": "193",
+            "open": "56",
+            "awaiting_stock": "262"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "9",
+            "in_packing": "230",
+            "open": "520",
+            "awaiting_stock": "569"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "10",
+            "in_packing": "133",
+            "open": "342",
+            "awaiting_stock": "454"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "14",
+            "in_packing": "389",
+            "open": "492",
+            "awaiting_stock": "278"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "4",
+            "in_packing": "490",
+            "open": "386",
+            "awaiting_stock": "371"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "5",
+            "in_packing": "546",
+            "open": "940",
+            "awaiting_stock": "753"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "7",
+            "in_packing": "298",
+            "open": "69",
+            "awaiting_stock": "83"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "8",
+            "in_packing": "202",
+            "open": "449",
+            "awaiting_stock": "459"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "12",
+            "in_packing": "435",
+            "open": "290",
+            "awaiting_stock": "93"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "15",
+            "in_packing": "358",
+            "open": "156",
+            "awaiting_stock": "48"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "1",
+            "market_name": "Tights.no",
+            "station": "5",
+            "in_packing": "204",
+            "open": "138",
+            "awaiting_stock": "157"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "1",
+            "market_name": "Tights.no",
+            "station": "12",
+            "in_packing": "326",
+            "open": "544",
+            "awaiting_stock": "671"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "1",
+            "market_name": "Tights.no",
+            "station": "13",
+            "in_packing": "112",
+            "open": "433",
+            "awaiting_stock": "319"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "1",
+            "market_name": "Tights.no",
+            "station": "14",
+            "in_packing": "260",
+            "open": "225",
+            "awaiting_stock": "362"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "3",
+            "in_packing": "711",
+            "open": "231",
+            "awaiting_stock": "627"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "4",
+            "in_packing": "77",
+            "open": "421",
+            "awaiting_stock": "440"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "6",
+            "in_packing": "15",
+            "open": "200",
+            "awaiting_stock": "340"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "11",
+            "in_packing": "378",
+            "open": "280",
+            "awaiting_stock": "428"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "13",
+            "in_packing": "499",
+            "open": "96",
+            "awaiting_stock": "312"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "14",
+            "in_packing": "158",
+            "open": "61",
+            "awaiting_stock": "199"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "4",
+            "market_name": "comfyballs.no",
+            "station": "1",
+            "in_packing": "380",
+            "open": "474",
+            "awaiting_stock": "168"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "4",
+            "market_name": "comfyballs.no",
+            "station": "4",
+            "in_packing": "215",
+            "open": "235",
+            "awaiting_stock": "486"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "4",
+            "market_name": "comfyballs.no",
+            "station": "5",
+            "in_packing": "476",
+            "open": "312",
+            "awaiting_stock": "15"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "4",
+            "market_name": "comfyballs.no",
+            "station": "8",
+            "in_packing": "274",
+            "open": "15",
+            "awaiting_stock": "333"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "4",
+            "market_name": "comfyballs.no",
+            "station": "13",
+            "in_packing": "39",
+            "open": "95",
+            "awaiting_stock": "159"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "5",
+            "in_packing": "376",
+            "open": "480",
+            "awaiting_stock": "358"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "8",
+            "in_packing": "89",
+            "open": "291",
+            "awaiting_stock": "411"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "9",
+            "in_packing": "365",
+            "open": "476",
+            "awaiting_stock": "736"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "15",
+            "in_packing": "372",
+            "open": "270",
+            "awaiting_stock": "242"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "8",
+            "market_name": "weightless.no",
+            "station": "5",
+            "in_packing": "77",
+            "open": "389",
+            "awaiting_stock": "111"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "8",
+            "market_name": "weightless.no",
+            "station": "10",
+            "in_packing": "434",
+            "open": "464",
+            "awaiting_stock": "491"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "8",
+            "market_name": "weightless.no",
+            "station": "13",
+            "in_packing": "369",
+            "open": "346",
+            "awaiting_stock": "185"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "2",
+            "warehouse_name": "BOR\u00c5S",
+            "market_id": "8",
+            "market_name": "weightless.no",
+            "station": "14",
+            "in_packing": "361",
+            "open": "17",
+            "awaiting_stock": "26"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "1",
+            "in_packing": "353",
+            "open": "467",
+            "awaiting_stock": "472"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "2",
+            "in_packing": "323",
+            "open": "86",
+            "awaiting_stock": "222"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "5",
+            "in_packing": "492",
+            "open": "452",
+            "awaiting_stock": "386"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "6",
+            "in_packing": "450",
+            "open": "272",
+            "awaiting_stock": "184"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "7",
+            "in_packing": "424",
+            "open": "334",
+            "awaiting_stock": "201"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "8",
+            "in_packing": "442",
+            "open": "100",
+            "awaiting_stock": "363"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "11",
+            "in_packing": "423",
+            "open": "401",
+            "awaiting_stock": "330"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "2",
+            "market_name": "Amazon",
+            "station": "13",
+            "in_packing": "84",
+            "open": "495",
+            "awaiting_stock": "277"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "1",
+            "in_packing": "389",
+            "open": "740",
+            "awaiting_stock": "332"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "2",
+            "in_packing": "451",
+            "open": "80",
+            "awaiting_stock": "44"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "3",
+            "in_packing": "149",
+            "open": "471",
+            "awaiting_stock": "173"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "4",
+            "in_packing": "18",
+            "open": "50",
+            "awaiting_stock": "47"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "5",
+            "in_packing": "266",
+            "open": "488",
+            "awaiting_stock": "275"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "13",
+            "in_packing": "239",
+            "open": "252",
+            "awaiting_stock": "206"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "14",
+            "in_packing": "467",
+            "open": "266",
+            "awaiting_stock": "409"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "3",
+            "market_name": "Ebay",
+            "station": "15",
+            "in_packing": "168",
+            "open": "328",
+            "awaiting_stock": "19"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "2",
+            "in_packing": "342",
+            "open": "261",
+            "awaiting_stock": "496"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "4",
+            "in_packing": "479",
+            "open": "306",
+            "awaiting_stock": "497"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "5",
+            "in_packing": "365",
+            "open": "325",
+            "awaiting_stock": "265"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "6",
+            "in_packing": "428",
+            "open": "182",
+            "awaiting_stock": "299"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "12",
+            "in_packing": "74",
+            "open": "675",
+            "awaiting_stock": "747"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "7",
+            "market_name": "Soma.no",
+            "station": "14",
+            "in_packing": "115",
+            "open": "89",
+            "awaiting_stock": "382"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "1",
+            "market_name": "Tights.no",
+            "station": "1",
+            "in_packing": "360",
+            "open": "371",
+            "awaiting_stock": "108"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "1",
+            "market_name": "Tights.no",
+            "station": "2",
+            "in_packing": "227",
+            "open": "105",
+            "awaiting_stock": "107"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "1",
+            "market_name": "Tights.no",
+            "station": "3",
+            "in_packing": "390",
+            "open": "400",
+            "awaiting_stock": "389"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "1",
+            "market_name": "Tights.no",
+            "station": "4",
+            "in_packing": "38",
+            "open": "430",
+            "awaiting_stock": "407"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "1",
+            "market_name": "Tights.no",
+            "station": "10",
+            "in_packing": "61",
+            "open": "216",
+            "awaiting_stock": "241"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "1",
+            "market_name": "Tights.no",
+            "station": "11",
+            "in_packing": "468",
+            "open": "239",
+            "awaiting_stock": "479"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "6",
+            "in_packing": "37",
+            "open": "282",
+            "awaiting_stock": "343"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "13",
+            "in_packing": "684",
+            "open": "765",
+            "awaiting_stock": "239"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "5",
+            "market_name": "comfyballs.com",
+            "station": "15",
+            "in_packing": "73",
+            "open": "127",
+            "awaiting_stock": "361"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "4",
+            "market_name": "comfyballs.no",
+            "station": "3",
+            "in_packing": "316",
+            "open": "472",
+            "awaiting_stock": "449"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "4",
+            "market_name": "comfyballs.no",
+            "station": "4",
+            "in_packing": "289",
+            "open": "61",
+            "awaiting_stock": "308"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "4",
+            "market_name": "comfyballs.no",
+            "station": "5",
+            "in_packing": "512",
+            "open": "328",
+            "awaiting_stock": "166"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "4",
+            "market_name": "comfyballs.no",
+            "station": "7",
+            "in_packing": "328",
+            "open": "152",
+            "awaiting_stock": "272"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "4",
+            "market_name": "comfyballs.no",
+            "station": "15",
+            "in_packing": "289",
+            "open": "440",
+            "awaiting_stock": "470"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "5",
+            "in_packing": "73",
+            "open": "219",
+            "awaiting_stock": "284"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "7",
+            "in_packing": "317",
+            "open": "270",
+            "awaiting_stock": "360"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "9",
+            "in_packing": "555",
+            "open": "309",
+            "awaiting_stock": "443"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "12",
+            "in_packing": "270",
+            "open": "180",
+            "awaiting_stock": "494"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "13",
+            "in_packing": "445",
+            "open": "130",
+            "awaiting_stock": "291"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "6",
+            "market_name": "comfyballs.se",
+            "station": "14",
+            "in_packing": "55",
+            "open": "223",
+            "awaiting_stock": "253"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "8",
+            "market_name": "weightless.no",
+            "station": "1",
+            "in_packing": "401",
+            "open": "259",
+            "awaiting_stock": "368"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "8",
+            "market_name": "weightless.no",
+            "station": "3",
+            "in_packing": "248",
+            "open": "28",
+            "awaiting_stock": "499"
+        },
+        {
+            "date": "2021-06-01",
+            "warehouse_id": "1",
+            "warehouse_name": "Vestby",
+            "market_id": "8",
+            "market_name": "weightless.no",
+            "station": "8",
+            "in_packing": "57",
+            "open": "347",
+            "awaiting_stock": "498"
+        }
+    ],
+    "hourlyStatistics": [
+        {
+            "warehouse_id": "1",
+            "hour": 0,
+            "in_packing": "136",
+            "open": "284",
+            "awaiting_stock": "277"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 1,
+            "in_packing": "914",
+            "open": "790",
+            "awaiting_stock": "123"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 4,
+            "in_packing": "400",
+            "open": "498",
+            "awaiting_stock": "396"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "in_packing": "13044",
+            "open": "13073",
+            "awaiting_stock": "14066"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 9,
+            "in_packing": "251",
+            "open": "107",
+            "awaiting_stock": "129"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 13,
+            "in_packing": "339",
+            "open": "382",
+            "awaiting_stock": "320"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 15,
+            "in_packing": "42",
+            "open": "234",
+            "awaiting_stock": "364"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 16,
+            "in_packing": "452",
+            "open": "408",
+            "awaiting_stock": "271"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 18,
+            "in_packing": "390",
+            "open": "400",
+            "awaiting_stock": "389"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 22,
+            "in_packing": "705",
+            "open": "411",
+            "awaiting_stock": "387"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 0,
+            "in_packing": "312",
+            "open": "86",
+            "awaiting_stock": "424"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 1,
+            "in_packing": "244",
+            "open": "374",
+            "awaiting_stock": "334"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 4,
+            "in_packing": "44",
+            "open": "252",
+            "awaiting_stock": "398"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 5,
+            "in_packing": "589",
+            "open": "477",
+            "awaiting_stock": "674"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "in_packing": "12771",
+            "open": "12523",
+            "awaiting_stock": "13610"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 9,
+            "in_packing": "386",
+            "open": "237",
+            "awaiting_stock": "311"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 10,
+            "in_packing": "555",
+            "open": "727",
+            "awaiting_stock": "710"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 11,
+            "in_packing": "83",
+            "open": "495",
+            "awaiting_stock": "409"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 13,
+            "in_packing": "238",
+            "open": "277",
+            "awaiting_stock": "39"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 14,
+            "in_packing": "719",
+            "open": "325",
+            "awaiting_stock": "812"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 15,
+            "in_packing": "852",
+            "open": "835",
+            "awaiting_stock": "879"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 17,
+            "in_packing": "120",
+            "open": "326",
+            "awaiting_stock": "295"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 23,
+            "in_packing": "347",
+            "open": "166",
+            "awaiting_stock": "220"
+        }
+    ],
+    "hourlyStatisticsByStations": [
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "1",
+            "in_packing": "1503",
+            "open": "1837",
+            "awaiting_stock": "1280"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 13,
+            "station": "1",
+            "in_packing": "339",
+            "open": "382",
+            "awaiting_stock": "320"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "2",
+            "in_packing": "1343",
+            "open": "532",
+            "awaiting_stock": "869"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 0,
+            "station": "3",
+            "in_packing": "136",
+            "open": "284",
+            "awaiting_stock": "277"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 1,
+            "station": "3",
+            "in_packing": "39",
+            "open": "215",
+            "awaiting_stock": "58"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "3",
+            "in_packing": "713",
+            "open": "971",
+            "awaiting_stock": "1121"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 18,
+            "station": "3",
+            "in_packing": "390",
+            "open": "400",
+            "awaiting_stock": "389"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 22,
+            "station": "3",
+            "in_packing": "365",
+            "open": "314",
+            "awaiting_stock": "336"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "4",
+            "in_packing": "824",
+            "open": "847",
+            "awaiting_stock": "1259"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 15,
+            "station": "4",
+            "in_packing": "42",
+            "open": "234",
+            "awaiting_stock": "364"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "5",
+            "in_packing": "1708",
+            "open": "1812",
+            "awaiting_stock": "1376"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "6",
+            "in_packing": "915",
+            "open": "736",
+            "awaiting_stock": "826"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "7",
+            "in_packing": "1069",
+            "open": "756",
+            "awaiting_stock": "833"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 22,
+            "station": "7",
+            "in_packing": "340",
+            "open": "97",
+            "awaiting_stock": "51"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "8",
+            "in_packing": "499",
+            "open": "447",
+            "awaiting_stock": "861"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "9",
+            "in_packing": "555",
+            "open": "309",
+            "awaiting_stock": "443"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 16,
+            "station": "9",
+            "in_packing": "452",
+            "open": "408",
+            "awaiting_stock": "271"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "10",
+            "in_packing": "61",
+            "open": "216",
+            "awaiting_stock": "241"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 4,
+            "station": "11",
+            "in_packing": "400",
+            "open": "498",
+            "awaiting_stock": "396"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "11",
+            "in_packing": "891",
+            "open": "640",
+            "awaiting_stock": "809"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 9,
+            "station": "11",
+            "in_packing": "251",
+            "open": "107",
+            "awaiting_stock": "129"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 1,
+            "station": "12",
+            "in_packing": "480",
+            "open": "225",
+            "awaiting_stock": "50"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "12",
+            "in_packing": "344",
+            "open": "855",
+            "awaiting_stock": "1241"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "13",
+            "in_packing": "1452",
+            "open": "1642",
+            "awaiting_stock": "1013"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "14",
+            "in_packing": "637",
+            "open": "578",
+            "awaiting_stock": "1044"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 1,
+            "station": "15",
+            "in_packing": "395",
+            "open": "350",
+            "awaiting_stock": "15"
+        },
+        {
+            "warehouse_id": "1",
+            "hour": 8,
+            "station": "15",
+            "in_packing": "530",
+            "open": "895",
+            "awaiting_stock": "850"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 5,
+            "station": "1",
+            "in_packing": "480",
+            "open": "187",
+            "awaiting_stock": "179"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "1",
+            "in_packing": "478",
+            "open": "968",
+            "awaiting_stock": "267"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 15,
+            "station": "1",
+            "in_packing": "336",
+            "open": "449",
+            "awaiting_stock": "331"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 5,
+            "station": "3",
+            "in_packing": "109",
+            "open": "290",
+            "awaiting_stock": "495"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "3",
+            "in_packing": "961",
+            "open": "348",
+            "awaiting_stock": "711"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "4",
+            "in_packing": "782",
+            "open": "1042",
+            "awaiting_stock": "1297"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 11,
+            "station": "4",
+            "in_packing": "83",
+            "open": "495",
+            "awaiting_stock": "409"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "5",
+            "in_packing": "2260",
+            "open": "2620",
+            "awaiting_stock": "1823"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 23,
+            "station": "5",
+            "in_packing": "347",
+            "open": "166",
+            "awaiting_stock": "220"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "6",
+            "in_packing": "568",
+            "open": "518",
+            "awaiting_stock": "736"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 10,
+            "station": "6",
+            "in_packing": "443",
+            "open": "351",
+            "awaiting_stock": "228"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 15,
+            "station": "6",
+            "in_packing": "172",
+            "open": "319",
+            "awaiting_stock": "443"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 4,
+            "station": "7",
+            "in_packing": "44",
+            "open": "252",
+            "awaiting_stock": "398"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "7",
+            "in_packing": "608",
+            "open": "420",
+            "awaiting_stock": "488"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 0,
+            "station": "8",
+            "in_packing": "312",
+            "open": "86",
+            "awaiting_stock": "424"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "8",
+            "in_packing": "1413",
+            "open": "1322",
+            "awaiting_stock": "2094"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 15,
+            "station": "8",
+            "in_packing": "344",
+            "open": "67",
+            "awaiting_stock": "105"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 1,
+            "station": "9",
+            "in_packing": "171",
+            "open": "35",
+            "awaiting_stock": "93"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "9",
+            "in_packing": "595",
+            "open": "996",
+            "awaiting_stock": "1305"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "10",
+            "in_packing": "567",
+            "open": "806",
+            "awaiting_stock": "945"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 17,
+            "station": "10",
+            "in_packing": "120",
+            "open": "326",
+            "awaiting_stock": "295"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "11",
+            "in_packing": "563",
+            "open": "338",
+            "awaiting_stock": "701"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 13,
+            "station": "11",
+            "in_packing": "238",
+            "open": "277",
+            "awaiting_stock": "39"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 14,
+            "station": "11",
+            "in_packing": "387",
+            "open": "66",
+            "awaiting_stock": "391"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "12",
+            "in_packing": "761",
+            "open": "834",
+            "awaiting_stock": "764"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 1,
+            "station": "13",
+            "in_packing": "73",
+            "open": "339",
+            "awaiting_stock": "241"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "13",
+            "in_packing": "1019",
+            "open": "970",
+            "awaiting_stock": "975"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 10,
+            "station": "13",
+            "in_packing": "112",
+            "open": "376",
+            "awaiting_stock": "482"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "14",
+            "in_packing": "1168",
+            "open": "795",
+            "awaiting_stock": "865"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 8,
+            "station": "15",
+            "in_packing": "1028",
+            "open": "546",
+            "awaiting_stock": "639"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 9,
+            "station": "15",
+            "in_packing": "386",
+            "open": "237",
+            "awaiting_stock": "311"
+        },
+        {
+            "warehouse_id": "2",
+            "hour": 14,
+            "station": "15",
+            "in_packing": "332",
+            "open": "259",
+            "awaiting_stock": "421"
+        }
+    ]
+}

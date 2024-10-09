@@ -1,0 +1,27 @@
+@include b(message-box) {
+    background-color: $--color-base-dark;
+    border: 1px solid $--color-base-dark;
+
+    @include e(headerbtn) {
+        .el-message-box__close {
+            color: $--color-info;
+        }
+
+        &:focus, &:hover {
+            .el-message-box__close {
+                color: $--color-primary;
+            }
+        }
+
+    }
+
+    @include e(title) {
+        color: $--color-primary;
+    }
+
+    @include e(content) {
+        padding: 10px $--msgbox-padding-primary;
+        color: $--messagebox-content-color;
+        font-size: $--messagebox-content-font-size;
+    }
+}

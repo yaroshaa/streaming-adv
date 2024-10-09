@@ -1,0 +1,227 @@
+// @import "common/var";
+
+// Name:            Margin
+// Description:     Utilities for margins
+//
+// Component:       `el-margin-*`
+//                  `el-margin-sm-*`
+//                  `el-margin-md-*`
+//                  `el-margin-lg-*`
+//                  `el-margin-xl-*`
+//                  `el-margin-remove-*`
+//                  `el-margin-auto-*`
+//
+// ========================================================================
+
+/*
+ * Default
+ */
+
+.el-margin { margin-bottom: $--spacing-default; }
+* + .el-margin { margin-top: $--spacing-default !important; }
+
+.el-margin-top { margin-top: $--spacing-default !important; }
+.el-margin-bottom { margin-bottom: $--spacing-default !important; }
+.el-margin-left { margin-left: $--spacing-default !important; }
+.el-margin-right { margin-right: $--spacing-default !important; }
+
+/* Extra small
+ ========================================================================== */
+
+.el-margin-xs { margin-bottom: $--spacing-xs; }
+* + .el-margin-xs { margin-top: $--spacing-xs !important; }
+
+.el-margin-xs-top { margin-top: $--spacing-xs !important; }
+.el-margin-xs-bottom { margin-bottom: $--spacing-xs !important; }
+.el-margin-xs-left { margin-left: $--spacing-xs !important; }
+.el-margin-xs-right { margin-right: $--spacing-xs !important; }
+
+/* Small
+ ========================================================================== */
+
+.el-margin-sm { margin-bottom: $--spacing-sm; }
+* + .el-margin-sm { margin-top: $--spacing-sm !important; }
+
+.el-margin-sm-top { margin-top: $--spacing-sm !important; }
+.el-margin-sm-bottom { margin-bottom: $--spacing-sm !important; }
+.el-margin-sm-left { margin-left: $--spacing-sm !important; }
+.el-margin-sm-right { margin-right: $--spacing-sm !important; }
+
+/* Medium
+ ========================================================================== */
+
+.el-margin-md { margin-bottom: $--spacing-md; }
+* + .el-margin-md { margin-top: $--spacing-md !important; }
+
+.el-margin-md-top { margin-top: $--spacing-md !important; }
+.el-margin-md-bottom { margin-bottom: $--spacing-md !important; }
+.el-margin-md-left { margin-left: $--spacing-md !important; }
+.el-margin-md-right { margin-right: $--spacing-md !important; }
+
+/* Large
+ ========================================================================== */
+
+.el-margin-lg { margin-bottom: $--spacing-lg; }
+* + .el-margin-lg { margin-top: $--spacing-lg !important; }
+
+.el-margin-lg-top { margin-top: $--spacing-lg !important; }
+.el-margin-lg-bottom { margin-bottom: $--spacing-lg !important; }
+.el-margin-lg-left { margin-left: $--spacing-lg !important; }
+.el-margin-lg-right { margin-right: $--spacing-lg !important; }
+
+// /* Desktop and bigger */
+// @media (min-width: $--lg) {
+//
+//     .el-margin-lg { margin-bottom: $margin-large-margin-l; }
+//     * + .el-margin-lg { margin-top: $margin-large-margin-l !important; }
+//
+//     .el-margin-lg-top { margin-top: $margin-large-margin-l !important; }
+//     .el-margin-lg-bottom { margin-bottom: $margin-large-margin-l !important; }
+//     .el-margin-lg-left { margin-left: $margin-large-margin-l !important; }
+//     .el-margin-lg-right { margin-right: $margin-large-margin-l !important; }
+//
+// }
+
+/* Extra large
+ ========================================================================== */
+
+.el-margin-xl { margin-bottom: $--spacing-xl; }
+* + .el-margin-xl { margin-top: $--spacing-xl !important; }
+
+.el-margin-xl-top { margin-top: $--spacing-xl !important; }
+.el-margin-xl-bottom { margin-bottom: $--spacing-xl !important; }
+.el-margin-xl-left { margin-left: $--spacing-xl !important; }
+.el-margin-xl-right { margin-right: $--spacing-xl !important; }
+
+// /* Desktop and bigger */
+// @media (min-width: $breakpoint-large) {
+//
+//     .el-margin-xl { margin-bottom: $margin-xlarge-margin-l; }
+//     * + .el-margin-xl { margin-top: $margin-xlarge-margin-l !important; }
+//
+//     .el-margin-xl-top { margin-top: $margin-xlarge-margin-l !important; }
+//     .el-margin-xl-bottom { margin-bottom: $margin-xlarge-margin-l !important; }
+//     .el-margin-xl-left { margin-left: $margin-xlarge-margin-l !important; }
+//     .el-margin-xl-right { margin-right: $margin-xlarge-margin-l !important; }
+//
+// }
+
+/* Auto
+ ========================================================================== */
+
+.el-margin-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.el-margin-auto-top { margin-top: auto !important; }
+.el-margin-auto-bottom { margin-bottom: auto !important; }
+.el-margin-auto-left { margin-left: auto !important; }
+.el-margin-auto-right { margin-right: auto !important; }
+
+.el-margin-auto-vertical {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+/* Phone landscape and bigger */
+@media (min-width: $--sm) {
+
+    .el-margin-auto\@sm {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .el-margin-auto-left\@sm { margin-left: auto !important; }
+    .el-margin-auto-right\@sm { margin-right: auto !important; }
+
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: $--md) {
+
+    .el-margin-auto\@md {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .el-margin-auto-left\@md { margin-left: auto !important; }
+    .el-margin-auto-right\@md { margin-right: auto !important; }
+
+}
+
+/* Desktop and bigger */
+@media (min-width: $--lg) {
+
+    .el-margin-auto\@lg {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .el-margin-auto-left\@lg { margin-left: auto !important; }
+    .el-margin-auto-right\@lg { margin-right: auto !important; }
+
+}
+
+/* Large screen and bigger */
+@media (min-width: $--xl) {
+
+    .el-margin-auto\@xl {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .el-margin-auto-left\@xl { margin-left: auto !important; }
+    .el-margin-auto-right\@xl { margin-right: auto !important; }
+
+}
+
+/* Remove
+ ========================================================================== */
+
+.el-margin-remove { margin: 0 !important; }
+.el-margin-remove-top { margin-top: 0 !important; }
+.el-margin-remove-bottom { margin-bottom: 0 !important; }
+.el-margin-remove-left { margin-left: 0 !important; }
+.el-margin-remove-right { margin-right: 0 !important; }
+
+.el-margin-remove-vertical {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.el-margin-remove-adjacent + *,
+.el-margin-remove-first-child > :first-child { margin-top: 0 !important; }
+.el-margin-remove-last-child > :last-child { margin-bottom: 0 !important; }
+
+/* Phone landscape and bigger */
+@media (min-width: $--sm) {
+
+    .el-margin-remove-left\@sm { margin-left: 0 !important; }
+    .el-margin-remove-right\@sm { margin-right: 0 !important; }
+
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: $--md) {
+
+    .el-margin-remove-left\@md { margin-left: 0 !important; }
+    .el-margin-remove-right\@md { margin-right: 0 !important; }
+
+}
+
+/* Desktop and bigger */
+@media (min-width: $--lg) {
+
+    .el-margin-remove-left\@lg { margin-left: 0 !important; }
+    .el-margin-remove-right\@lg { margin-right: 0 !important; }
+
+}
+
+/* Large screen and bigger */
+@media (min-width: $--xl) {
+
+    .el-margin-remove-left\@xl { margin-left: 0 !important; }
+    .el-margin-remove-right\@xl { margin-right: 0 !important; }
+
+}

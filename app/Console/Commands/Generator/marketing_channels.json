@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Facebook"
+    },
+    {
+        "id": 2,
+        "name": "Google"
+    },
+    {
+        "id": 3,
+        "name": "Adform"
+    },
+    {
+        "id": 4,
+        "name": "Snapchat"
+    },
+    {
+        "id": 5,
+        "name": "Affiliate"
+    },
+    {
+        "id": 6,
+        "name": "Offline"
+    },
+    {
+        "id": 7,
+        "name": "Other"
+    }
+]

@@ -1,0 +1,1742 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Stream API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/auth/login": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Login",
+                "operationId": "login",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "400": {
+                        "description": "Invalid request"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    }
+                }
+            }
+        },
+        "/api/auth/refresh": {
+            "get": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Refresh token",
+                "operationId": "refresh",
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "items": {
+                                        "type": "array",
+                                        "items": {
+                                            "$ref": "#/components/schemas/Order"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "/api/auth/register": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Register",
+                "operationId": "register",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "401": {
+                        "description": "Account is already exists"
+                    },
+                    "400": {
+                        "description": "Invalid request"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    }
+                }
+            }
+        },
+        "/api/market": {
+            "get": {
+                "tags": [
+                    "Markets"
+                ],
+                "summary": "Get list of markets",
+                "description": "Returns list of markets",
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "description": "List all",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Market"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Markets"
+                ],
+                "summary": "Create",
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/StoreMarket"
+                },
+                "responses": {
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "201": {
+                        "description": "Created"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "/api/market/{id}": {
+            "get": {
+                "tags": [
+                    "Markets"
+                ],
+                "summary": "Read",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "404": {
+                        "description": "Not found"
+                    },
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/Market"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "put": {
+                "tags": [
+                    "Markets"
+                ],
+                "summary": "Update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/StoreMarket"
+                },
+                "responses": {
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    },
+                    "200": {
+                        "description": "Updated"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "Markets"
+                ],
+                "summary": "Delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "404": {
+                        "description": "Not found"
+                    },
+                    "200": {
+                        "description": "Deleted"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "/api/marketing-channel": {
+            "get": {
+                "tags": [
+                    "Marketing channels"
+                ],
+                "summary": "Get list of marketing channels",
+                "description": "Returns list of marketing channels",
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "description": "List all",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/MarketingChannel"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Marketing channels"
+                ],
+                "summary": "Create",
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/StoreMarketingChannel"
+                },
+                "responses": {
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "201": {
+                        "description": "Created"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "/api/marketing-channel/{id}": {
+            "get": {
+                "tags": [
+                    "Marketing channels"
+                ],
+                "summary": "Read",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "404": {
+                        "description": "Not found"
+                    },
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/MarketingChannel"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "put": {
+                "tags": [
+                    "Marketing channels"
+                ],
+                "summary": "Update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/StoreMarketingChannel"
+                },
+                "responses": {
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    },
+                    "200": {
+                        "description": "Updated"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "Marketing channels"
+                ],
+                "summary": "Delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "404": {
+                        "description": "Not found"
+                    },
+                    "200": {
+                        "description": "Deleted"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "/api/source": {
+            "get": {
+                "tags": [
+                    "Sources"
+                ],
+                "summary": "Get list of sources",
+                "description": "Returns list of sources",
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "description": "List all",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Source"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Sources"
+                ],
+                "summary": "Create",
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/StoreSource"
+                },
+                "responses": {
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "201": {
+                        "description": "Created"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "/api/source/{id}": {
+            "get": {
+                "tags": [
+                    "Sources"
+                ],
+                "summary": "Read",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "404": {
+                        "description": "Not found"
+                    },
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/Source"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "put": {
+                "tags": [
+                    "Sources"
+                ],
+                "summary": "Update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/StoreSource"
+                },
+                "responses": {
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    },
+                    "200": {
+                        "description": "Updated"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "Sources"
+                ],
+                "summary": "Delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "404": {
+                        "description": "Not found"
+                    },
+                    "200": {
+                        "description": "Deleted"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "/api/cart-action": {
+            "post": {
+                "tags": [
+                    "StreamAnalytics"
+                ],
+                "summary": "Store cart action",
+                "description": "Store cart actions",
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/CartAction"
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    }
+                }
+            }
+        },
+        "/api/active-user": {
+            "post": {
+                "tags": [
+                    "StreamAnalytics"
+                ],
+                "summary": "Store active user",
+                "description": "Store active user",
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/ActiveUser"
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    }
+                }
+            }
+        },
+        "/api/warehouse-statistic": {
+            "post": {
+                "tags": [
+                    "StreamAnalytics"
+                ],
+                "summary": "Store warehouse statistics",
+                "description": "Store warehouse statistics",
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/WarehouseStatistic"
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    }
+                }
+            }
+        },
+        "/api/warehouse": {
+            "get": {
+                "tags": [
+                    "Warehouses"
+                ],
+                "summary": "Get list of warehouses",
+                "description": "Returns list of warehouses",
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "description": "List all",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Warehouse"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Warehouses"
+                ],
+                "summary": "Create",
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/StoreWarehouse"
+                },
+                "responses": {
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "201": {
+                        "description": "Created"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "/api/warehouse/{id}": {
+            "get": {
+                "tags": [
+                    "Warehouses"
+                ],
+                "summary": "Read",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "404": {
+                        "description": "Not found"
+                    },
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/Warehouse"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "put": {
+                "tags": [
+                    "Warehouses"
+                ],
+                "summary": "Update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/StoreWarehouse"
+                },
+                "responses": {
+                    "422": {
+                        "description": "Unprocessable Entity"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    },
+                    "200": {
+                        "description": "Updated"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "Warehouses"
+                ],
+                "summary": "Delete",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "404": {
+                        "description": "Not found"
+                    },
+                    "200": {
+                        "description": "Deleted"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "/api/feedbacks": {
+            "get": {
+                "tags": [
+                    "Feedbacks"
+                ],
+                "summary": "Get list of feedbacks",
+                "description": "Returns list of feedbacks",
+                "operationId": "getFeedbacks",
+                "parameters": [
+                    {
+                        "name": "source",
+                        "in": "query",
+                        "description": "Sources for search",
+                        "style": "form",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/components/schemas/Source"
+                            }
+                        }
+                    },
+                    {
+                        "name": "market",
+                        "in": "query",
+                        "description": "Markets for search",
+                        "style": "form",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/components/schemas/Market"
+                            }
+                        }
+                    },
+                    {
+                        "name": "words",
+                        "in": "query",
+                        "description": "Words for search",
+                        "style": "form",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "style": "deepObject",
+                        "schema": {
+                            "properties": {
+                                "from": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                }
+                            },
+                            "type": "string",
+                            "example": {
+                                "from": "2021-03-21T22:00:00.000+00:00"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "items": {
+                                        "type": "array",
+                                        "items": {
+                                            "$ref": "#/components/schemas/feedback"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Feedbacks"
+                ],
+                "summary": "Create feedback",
+                "description": "Create new feedback",
+                "operationId": "addFeedback",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "data": {
+                                        "type": "array",
+                                        "items": {
+                                            "$ref": "#/components/schemas/feedback"
+                                        }
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "ok"
+                    },
+                    "500": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Invalid validation"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/orders": {
+            "get": {
+                "tags": [
+                    "Order"
+                ],
+                "summary": "Get list of orders",
+                "description": "Returns list of orders",
+                "operationId": "getOrders",
+                "parameters": [
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "required": true,
+                        "style": "deepObject",
+                        "schema": {
+                            "properties": {
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "from": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                }
+                            },
+                            "type": "string",
+                            "example": {
+                                "currency": {
+                                    "id": 1
+                                },
+                                "from": "2021-03-21T22:00:00.000+00:00"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "items": {
+                                        "type": "array",
+                                        "items": {
+                                            "$ref": "#/components/schemas/Order"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Order"
+                ],
+                "summary": "Create order",
+                "description": "Create new order",
+                "operationId": "addOrder",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "data": {
+                                        "type": "array",
+                                        "items": {
+                                            "$ref": "#/components/schemas/newOrderData"
+                                        }
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "The given data was invalid"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "feedback": {
+                "title": "Feedback",
+                "description": "ClickHouse feedback entity",
+                "properties": {
+                    "unique_id": {
+                        "type": "string",
+                        "format": "string",
+                        "readOnly": "true",
+                        "example": "6799289c701cefdb28800f5f547d94018edea152d2b248b5db4edbfde4516e0fe2fee2323d041fa87e4fbbbe42a10487bc0b533fa9f4027fac615581dd3fde12"
+                    },
+                    "name": {
+                        "type": "string",
+                        "format": "string",
+                        "example": "First Last"
+                    },
+                    "message": {
+                        "type": "string",
+                        "format": "string",
+                        "example": "Example comment or feedback"
+                    },
+                    "created_at": {
+                        "type": "string",
+                        "format": "string",
+                        "example": "2021-03-19T09:45:22.145Z"
+                    },
+                    "market_id": {
+                        "type": "integer",
+                        "format": "number",
+                        "example": "2"
+                    },
+                    "source_id": {
+                        "type": "integer",
+                        "format": "number",
+                        "example": "2"
+                    },
+                    "url": {
+                        "type": "string",
+                        "format": "string",
+                        "example": "http://localhost/foo/bar"
+                    }
+                },
+                "type": "object"
+            },
+            "marketingExpense": {
+                "title": "Marketing Expense",
+                "description": "Marketing Expense"
+            },
+            "userHistoryStatistic": {
+                "title": "User History Statistic",
+                "description": "ClickHouse UserHistoryStatistic entity"
+            },
+            "Address": {
+                "title": "Address",
+                "description": "Address model",
+                "properties": {
+                    "id": {
+                        "description": "The unique identifier of a address.",
+                        "type": "integer",
+                        "format": "int64",
+                        "readOnly": "true"
+                    },
+                    "address": {
+                        "description": "The full address.",
+                        "type": "string",
+                        "example": "Karlshof, 72351 Geislingen, Германия"
+                    },
+                    "lat": {
+                        "description": "The latitude coordinate.",
+                        "type": "number",
+                        "format": "float",
+                        "readOnly": "true"
+                    },
+                    "lng": {
+                        "description": "The longitude coordinate.",
+                        "type": "number",
+                        "format": "float",
+                        "readOnly": "true"
+                    }
+                },
+                "type": "object"
+            },
+            "Currency": {
+                "title": "Currency",
+                "description": "Currency model",
+                "properties": {
+                    "id": {
+                        "description": "The unique identifier of a currency.",
+                        "type": "integer",
+                        "format": "int64",
+                        "readOnly": "true"
+                    },
+                    "name": {
+                        "description": "The name of a currency.",
+                        "type": "string",
+                        "example": "USD"
+                    },
+                    "code": {
+                        "description": "The code of a currency.",
+                        "type": "string",
+                        "example": "USD"
+                    }
+                },
+                "type": "object"
+            },
+            "Customer": {
+                "title": "Customer",
+                "description": "Customer model",
+                "properties": {
+                    "base_id": {
+                        "description": "The unique identifier of a customer.",
+                        "type": "integer",
+                        "format": "int64",
+                        "readOnly": "true"
+                    },
+                    "name": {
+                        "description": "The name of a customer.",
+                        "type": "string",
+                        "example": "Liyah Swift"
+                    },
+                    "remote_id": {
+                        "description": "The unique identifier of a customer in remote database.",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": "6554"
+                    },
+                    "created_at": {
+                        "description": "Initial creation timestamp",
+                        "type": "string",
+                        "format": "date-time",
+                        "readOnly": "true"
+                    }
+                },
+                "type": "object"
+            },
+            "HolidayEvent": {
+                "title": "HolidayEvent",
+                "description": "HolidayEvent model",
+                "properties": {
+                    "id": {
+                        "description": "The unique identifier of a holiday event.",
+                        "type": "integer",
+                        "format": "int64",
+                        "readOnly": "true"
+                    },
+                    "title": {
+                        "description": "The holiday event title.",
+                        "type": "string",
+                        "example": "Green friday"
+                    },
+                    "date": {
+                        "description": "Date of event",
+                        "type": "string",
+                        "format": "date-time",
+                        "readOnly": "true"
+                    }
+                },
+                "type": "object"
+            },
+            "Market": {
+                "title": "Market",
+                "description": "Market model",
+                "properties": {
+                    "base_id": {
+                        "description": "The unique identifier of a market.",
+                        "type": "integer",
+                        "format": "int64",
+                        "readOnly": "true",
+                        "example": "1"
+                    },
+                    "name": {
+                        "description": "The market name.",
+                        "type": "string",
+                        "example": "comfyballs.no"
+                    },
+                    "remote_id": {
+                        "description": "The unique identifier of a market in remote database.",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": "4"
+                    },
+                    "iconLink": {
+                        "description": "The link for market icon.",
+                        "type": "string",
+                        "format": "url",
+                        "example": "/images/markets/comfyballs.jpeg"
+                    },
+                    "color": {
+                        "description": "The market color.",
+                        "type": "string",
+                        "example": "green"
+                    }
+                },
+                "type": "object"
+            },
+            "MarketingChannel": {
+                "title": "MarketingChannel",
+                "description": "MarketingChannel model",
+                "properties": {
+                    "id": {
+                        "description": "The unique identifier of a marketing channel.",
+                        "type": "integer",
+                        "format": "int64",
+                        "readOnly": "true",
+                        "example": "1"
+                    },
+                    "name": {
+                        "description": "The name of marketing channel.",
+                        "type": "string",
+                        "example": "Facebook"
+                    },
+                    "iconLink": {
+                        "description": "The name of marketing channel.",
+                        "type": "string",
+                        "example": "/images/marketing_channel/facebook.svg",
+                        "nullable": true
+                    }
+                },
+                "type": "object"
+            },
+            "newOrderData": {
+                "title": "new Order Data",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/Order"
+                    },
+                    {
+                        "$ref": "#/components/schemas/Address"
+                    },
+                    {
+                        "properties": {
+                            "currency": {
+                                "$ref": "#/components/schemas/Currency"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    {
+                        "properties": {
+                            "customer": {
+                                "$ref": "#/components/schemas/Customer"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    {
+                        "properties": {
+                            "market": {
+                                "$ref": "#/components/schemas/Market"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    {
+                        "properties": {
+                            "status": {
+                                "$ref": "#/components/schemas/OrderStatus"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    {
+                        "properties": {
+                            "products": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/OrderProduct"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    },
+                    {
+                        "properties": {
+                            "warehouse": {
+                                "$ref": "#/components/schemas/Warehouse"
+                            },
+                            "id": {
+                                "description": "The unique identifier of a order.",
+                                "type": "integer",
+                                "format": "int64",
+                                "readOnly": "true"
+                            },
+                            "order_id": {
+                                "description": "The unique identifier of a order in remote table.",
+                                "type": "string",
+                                "example": "9303"
+                            },
+                            "packing_cost": {
+                                "description": "Packing cost of order",
+                                "type": "number",
+                                "format": "float",
+                                "example": "123.33"
+                            },
+                            "created_at": {
+                                "description": "Initial creation timestamp",
+                                "type": "string",
+                                "format": "date-time",
+                                "readOnly": "true"
+                            },
+                            "updated_at": {
+                                "description": "Last update timestamp",
+                                "type": "string",
+                                "format": "date-time"
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            },
+            "Order": {
+                "title": "Order",
+                "description": "Order model"
+            },
+            "OrderStatus": {
+                "title": "OrderStatus",
+                "description": "Order statuses",
+                "properties": {
+                    "base_id": {
+                        "description": "The unique identifier of a order status.",
+                        "type": "integer",
+                        "format": "int64",
+                        "readOnly": "true"
+                    },
+                    "name": {
+                        "description": "The name of a status.",
+                        "type": "string",
+                        "example": "new"
+                    },
+                    "remote_id": {
+                        "description": "The unique identifier of a order status in remote table.",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": "4"
+                    },
+                    "color": {
+                        "description": "The color of a market.",
+                        "type": "string",
+                        "example": "green",
+                        "nullable": true
+                    }
+                },
+                "type": "object"
+            },
+            "Source": {
+                "title": "Source",
+                "description": "Source model",
+                "properties": {
+                    "id": {
+                        "description": "The unique identifier of a market.",
+                        "type": "integer",
+                        "format": "int64",
+                        "readOnly": "true",
+                        "example": "1"
+                    },
+                    "name": {
+                        "description": "The market name.",
+                        "type": "string",
+                        "example": "helpscout"
+                    },
+                    "remote_id": {
+                        "description": "The unique identifier of a market in remote database.",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": "4"
+                    },
+                    "iconLink": {
+                        "description": "The link for market icon.",
+                        "type": "string",
+                        "format": "url",
+                        "example": "/images/sources/helpscout.jpeg"
+                    }
+                },
+                "type": "object"
+            },
+            "Warehouse": {
+                "title": "Warehouse",
+                "description": "Warehouse model",
+                "properties": {
+                    "id": {
+                        "description": "The unique identifier of a warehouse.",
+                        "type": "integer",
+                        "format": "int64",
+                        "readOnly": "true",
+                        "example": "1"
+                    },
+                    "name": {
+                        "description": "The name of warehouse.",
+                        "type": "string",
+                        "example": "Vestby"
+                    }
+                },
+                "type": "object"
+            },
+            "ActiveUser": {
+                "title": "Active User",
+                "description": "CartAction object for store",
+                "properties": {
+                    "remote_id": {
+                        "format": "int64",
+                        "example": "1"
+                    },
+                    "status": {
+                        "format": "boolean",
+                        "example": "1"
+                    }
+                },
+                "type": "object"
+            },
+            "CartAction": {
+                "title": "Cart Action",
+                "description": "CartAction object for store",
+                "properties": {
+                    "remote_id": {
+                        "format": "int64",
+                        "example": "1"
+                    },
+                    "status": {
+                        "format": "boolean",
+                        "example": "1"
+                    }
+                },
+                "type": "object"
+            },
+            "WarehouseStatistic": {
+                "title": "Warehouse Statistic",
+                "description": "WarehouseStatistic object for store",
+                "properties": {
+                    "warehouse_id": {
+                        "format": "int64",
+                        "example": "1"
+                    },
+                    "in_packing": {
+                        "format": "int64",
+                        "example": "10"
+                    },
+                    "open": {
+                        "format": "int64",
+                        "example": "5"
+                    },
+                    "awaiting_stock": {
+                        "format": "int64",
+                        "example": "8"
+                    },
+                    "station": {
+                        "format": "int64",
+                        "example": "3"
+                    },
+                    "market_id": {
+                        "format": "int64",
+                        "example": "1"
+                    }
+                },
+                "type": "object"
+            },
+            "OrderProduct": {
+                "title": "OrderProduct model",
+                "description": "ClickHouse OrderProduct for store",
+                "properties": {
+                    "remote_id": {
+                        "format": "int64",
+                        "example": "301498"
+                    },
+                    "price": {
+                        "type": "number",
+                        "format": "float",
+                        "example": "738.95"
+                    },
+                    "profit": {
+                        "type": "number",
+                        "format": "float",
+                        "example": "253.39"
+                    },
+                    "qty": {
+                        "format": "int64",
+                        "example": "2"
+                    },
+                    "name": {
+                        "example": "TITAN LIFE Training Mat 180x60x1.5cm - Grey"
+                    },
+                    "link": {
+                        "format": "url",
+                        "example": "https://www.tights.no/butikk/titan-life-training-mat-180x60x1-5cm-grey/"
+                    },
+                    "image_link": {
+                        "format": "url",
+                        "example": "https://www.tights.no/wp-content/uploads/sites/7/2020/11/training_mat.jpg"
+                    },
+                    "discount": {
+                        "type": "number",
+                        "format": "float",
+                        "example": "6.23"
+                    },
+                    "weight": {
+                        "type": "number",
+                        "format": "float",
+                        "example": "2.05"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "requestBodies": {
+            "StoreMarket": {
+                "description": "Market object that needs to be store",
+                "required": true,
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "$ref": "#/components/schemas/Market"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            },
+            "DeleteMarket": {
+                "description": "Market object that needs to be delete",
+                "required": true
+            },
+            "StoreMarketingChannel": {
+                "description": "Channel object that needs to be store",
+                "required": true,
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "$ref": "#/components/schemas/MarketingChannel"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            },
+            "DeleteMarketingChannel": {
+                "description": "Channel object that needs to be delete",
+                "required": true
+            },
+            "StoreSource": {
+                "description": "Source object that needs to be store",
+                "required": true,
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "$ref": "#/components/schemas/Source"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            },
+            "DeleteSource": {
+                "description": "Source object that needs to be delete",
+                "required": true
+            },
+            "CartAction": {
+                "description": "CartAction object need to be store",
+                "required": true,
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/CartAction"
+                        }
+                    }
+                }
+            },
+            "ActiveUser": {
+                "description": "ActiveUser object need to be store",
+                "required": true,
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/ActiveUser"
+                        }
+                    }
+                }
+            },
+            "WarehouseStatistic": {
+                "description": "WarehouseStatistic object need to be store",
+                "required": true,
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/WarehouseStatistic"
+                        }
+                    }
+                }
+            },
+            "StoreWarehouse": {
+                "description": "Warehouse object that needs to be store",
+                "required": true,
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "$ref": "#/components/schemas/Warehouse"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            },
+            "DeleteWarehouse": {
+                "description": "Warehouse object that needs to be delete",
+                "required": true
+            }
+        },
+        "securitySchemes": {
+            "token": {
+                "type": "http",
+                "description": "Bearer {JWT}",
+                "name": "authorization",
+                "in": "header",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}

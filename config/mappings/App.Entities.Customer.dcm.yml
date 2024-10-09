@@ -1,0 +1,35 @@
+App\Entities\Customer:
+    type: entity
+    table: customers
+    repositoryClass: App\Repositories\CustomerRepository
+    indexes:
+        customer_remote_id_idx:
+            columns:
+                - remote_id
+    id:
+        id:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        remoteId:
+            type: bigint
+            nullable: false
+        createdAt:
+            type: datetime
+            nullable: true
+            column: created_at
+            gedmo:
+                timestampable:
+                    on: create
+    lifecycleCallbacks: { }

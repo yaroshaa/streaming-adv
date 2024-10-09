@@ -1,0 +1,9 @@
+@mixin backgroundColor($name, $color) {
+    .background-color-#{$name} {
+        background-color: $color;
+    }
+}
+
+@each $name, $color in $colors-collection {
+    @include backgroundColor($name, $color);
+}

@@ -1,0 +1,16 @@
+@include b(table) {
+    thead {
+        color: $--table-header-font-color;
+        font-weight: normal;
+    }
+    th {
+        font-weight: inherit;
+    }
+
+    @include m(transparent) {
+        background-color: transparent;
+        tr, th {
+            background-color: transparent;
+        }
+    }
+}

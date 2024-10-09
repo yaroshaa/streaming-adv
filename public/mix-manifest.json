@@ -1,0 +1,9 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/css/app-tailwind.css": "/css/app-tailwind.css",
+    "/js/app-tailwind.js": "/js/app-tailwind.js",
+    "/js/stream-analytics.js": "/js/stream-analytics.js",
+    "/fonts/element-icons.woff": "/fonts/element-icons.woff",
+    "/fonts/element-icons.ttf": "/fonts/element-icons.ttf"
+}

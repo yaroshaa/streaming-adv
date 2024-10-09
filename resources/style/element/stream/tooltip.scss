@@ -1,0 +1,39 @@
+@include b(tooltip) {
+    @include e(popper) {
+        &[x-placement^="top"] .popper__arrow {
+            border-top-color: $--color-base-dark;
+
+            &::after {
+                border-top-color: $--color-base-dark;
+            }
+        }
+
+        &[x-placement^="bottom"] .popper__arrow {
+            border-bottom-color: $--color-base-dark;
+
+            &::after {
+                border-bottom-color: $--color-base-dark;
+            }
+        }
+
+        &[x-placement^="right"] .popper__arrow {
+            border-right-color: $--color-base-dark;
+            &::after {
+                border-right-color: $--color-base-dark;
+            }
+        }
+
+        &[x-placement^="left"] .popper__arrow {
+            border-left-color: $--color-base-dark;
+
+            &::after {
+                border-left-color: $--color-base-dark;
+            }
+        }
+
+        @include when(dark) {
+            background: $--color-base-dark;
+            color: $--tooltip-color;
+        }
+    }
+}

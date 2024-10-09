@@ -1,0 +1,11 @@
+.highlight {
+    border-radius: 2px;
+    padding: 2px 2px 1px;
+
+    @each $name, $color in $colors-collection {
+        &-#{$name} {
+            background-color: $color;
+            color: $block-color;
+        }
+    }
+}

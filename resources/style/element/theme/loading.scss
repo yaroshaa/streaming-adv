@@ -1,0 +1,7 @@
+@include b(loading-mask) {
+    background-color: $--loading-mask-background;
+    border-radius: $--border-radius-base;
+    @include m(transparent) {
+        background-color: transparent;
+    }
+}

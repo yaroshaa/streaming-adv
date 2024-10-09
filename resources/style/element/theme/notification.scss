@@ -1,0 +1,13 @@
+@include b(notification) {
+    border: 1px solid $--color-base-dark;
+    background-color: $--color-base-dark;
+    box-shadow: $--color-white;
+
+    @include e(content) {
+        color: $--color-white;
+    }
+
+    @include e(title) {
+        color: $--color-white;
+    }
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Tights.no",
+        "remote_id": 1
+    },
+    {
+        "id": 2,
+        "name": "Amazon",
+        "remote_id": 2
+    },
+    {
+        "id": 3,
+        "name": "ebay",
+        "remote_id": 3
+    },
+    {
+        "id": 4,
+        "name": "comfyballs.no",
+        "remote_id": 4
+    }
+]

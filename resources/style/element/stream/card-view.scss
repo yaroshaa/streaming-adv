@@ -1,0 +1,84 @@
+.card-view {
+    display: flex;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.44px;
+
+    .card {
+        flex: 0 0 auto;
+        margin: 7px;
+        width: calc(25% - 14px);
+        padding: 12px 14px;
+        background-color: $--color-base-dark;
+        &:hover {
+            background-color: $--color-base-dark-hover;
+        }
+
+        &--header {
+            display: flex;
+            justify-content: space-between;
+            line-height: 24px;
+            color: #6A6A9F;
+            height: 24px;
+
+            .header-item {
+                .image-img {
+                    max-height: 20px;
+                    float: left;
+                    vertical-align: middle;
+                    padding-right: 12px;
+                }
+
+                .title {
+                    font-size: 14px;
+                }
+            }
+
+            .right {
+                .el-button {
+                    line-height: 20px;
+                    padding: 0 10px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                font-size: 12px;
+            }
+        }
+
+        &--content {
+            padding-top:12px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #fff;
+            text-align: justify;
+
+        }
+    }
+}
+
+@media screen and (max-width: $--xxl) {
+    .card-view {
+        .card {
+            width: calc(33.3% - 14px);
+        }
+    }
+}
+
+@media screen and (max-width: $--xl) {
+    .card-view {
+        .card {
+            width: calc(50% - 14px);
+        }
+    }
+}
+@media screen and (max-width: $--md) {
+    .card-view {
+        .card {
+            width: calc(100% - 14px);
+        }
+    }
+}

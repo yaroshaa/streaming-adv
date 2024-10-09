@@ -1,0 +1,73 @@
+@include b(tag) {
+    @include m(green) {
+        background-color: $--color-electric-green;
+        color: $--color-base-dark;
+        border: none;
+    }
+
+    @include m(yellow) {
+        background-color: $--color-electric-yellow;
+        color: $--color-base-dark;
+        border: none;
+    }
+
+    @include m(orange) {
+        background-color: $--color-warning;
+        color: $--color-base-dark;
+        border: none;
+    }
+
+    @include m(grey) {
+        background-color: $--color-info;
+        color: $--color-base-dark;
+        border: none;
+    }
+
+    @include m(white) {
+        background-color: $--color-white;
+        color: $--color-base-dark;
+        border: none;
+    }
+
+    @include m(blue) {
+        background-color: $--color-birches;
+        color: $--color-base-dark;
+        border: none;
+    }
+
+    @include m(red) {
+        background-color: $--color-danger;
+        color: $--color-base-dark;
+        border: none;
+    }
+
+    @each $name, $color in $colors-collection {
+        @include m($name) {
+            background-color: $color;
+            color: $--color-base-dark;
+            border: none;
+        }
+    }
+
+    @include m(blueish-black) {
+        background-color: $--color-base-dark;
+        color: $--color-white;
+        border: none;
+        &:hover {
+            background-color: $--background-color-eggplant;
+        }
+        .el-tag__close {
+            font-size: 18px;
+            color: $--color-white;
+
+            &:hover {
+                color: $--color-base-dark;
+                background: none;
+            }
+        }
+    }
+
+    @include m(round) {
+        border-radius: 50px;
+    }
+}

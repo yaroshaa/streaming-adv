@@ -1,0 +1,105 @@
+App\Entities\Order:
+    type: entity
+    table: orders
+    repositoryClass: App\Repositories\OrderRepository
+    indexes:
+        orders_currency_id_foreign:
+            columns:
+                - currency_id
+        orders_customer_id_foreign:
+            columns:
+                - customer_id
+        orders_market_id_foreign:
+            columns:
+                - market_id
+        orders_order_status_id_foreign:
+            columns:
+                - order_status_id
+        currency_remote_id_idx:
+            columns:
+                - remote_id
+        address_remote_id_idx:
+            columns:
+                - address_id
+    id:
+        id:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        createdAt:
+            type: datetime
+            nullable: false
+            column: created_at
+            gedmo:
+              timestampable:
+                on: create
+        updatedAt:
+            type: datetime
+            nullable: false
+            column: updated_at
+            gedmo:
+              timestampable:
+                on: update
+        remoteId:
+          type: string
+          nullable: false
+        packingCost:
+            type: float
+            nullable: false
+    manyToOne:
+        currency:
+            targetEntity: App\Entities\Currency
+            cascade: ["persist"]
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                currency_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        customer:
+            targetEntity: App\Entities\Customer
+            cascade: ["persist"]
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                customer_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        market:
+            targetEntity: App\Entities\Market
+            cascade: ["persist"]
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                market_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        orderStatus:
+            targetEntity: App\Entities\OrderStatus
+            cascade: ["persist"]
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                order_status_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        address:
+            targetEntity: App\Entities\Address
+            cascade: ["persist"]
+            fetch: EAGER
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                address_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

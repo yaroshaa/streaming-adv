@@ -1,0 +1,7 @@
+@include b(input-group) {
+    @include e((append, prepend)) {
+        background-color: transparent !important;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}

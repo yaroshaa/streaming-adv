@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <button onclick="streamAnalytics.track('click', {})">Track Click</button>
+
+    <script type="text/javascript">
+        !function(t,a,e){window.streamAnalytics=e,e.init=((a,e)=>{t.streamAnalyticsKey=a,t.streamAnalyticsApiUrl=e}),
+            e.track=((t,a)=>{e.event={name:t,data:a}});const n=t.createElement("script");
+            n.type="text/javascript",n.id="stream-analytics",n.src=`${location.origin}/js/stream-analytics.js`,n.async=1;
+            const s=t.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(n,s),n.onload=function(){window.streamAnalytics.track(e.event.name,e.event.data)}}(document,0,window.streamAnalytics||[]);
+
+        streamAnalytics.init('123-456-789', location.host)
+
+        streamAnalytics.track('pageview', {
+            path: location.pathname
+        })
+
+    </script>
+
+</body>
+</html>

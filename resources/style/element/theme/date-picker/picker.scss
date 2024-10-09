@@ -1,0 +1,8 @@
+@include b(date-editor) {
+    .el-range-input {
+        background-color: transparent;
+    }
+}
+.el-date-table td.in-range div {
+    background-color: #3D2386;
+}

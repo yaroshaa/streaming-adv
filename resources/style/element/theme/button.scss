@@ -1,0 +1,30 @@
+@include b(button) {
+    @include m(transparent) {
+        background-color: transparent !important;
+    }
+
+    @include m(purple) {
+        @include button-variant($--color-white, $--color-primary, $--color-primary);
+    }
+
+    @include m(primary-submit) {
+        @include button-variant($--color-white, $--background-color-dark-blue, $--background-color-dark-blue);
+
+        &:hover {
+            //background-color: $--color-base-dark;
+            background-color: #616164;
+            //border-color: $--background-color-dark-blue;
+            border-color: #616164;
+        }
+    }
+
+    @include m(danger-submit) {
+        @include button-variant($--color-danger, $--background-color-blackly, $--color-danger);
+
+        &:hover {
+            background-color: $--color-danger;
+            border-color: $--color-danger;
+            color: $--color-black;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+App\Entities\ProductVariant:
+    type: entity
+    table: product_variants
+    repositoryClass: App\Repositories\ProductVariantRepository
+    indexes:
+        product_variant_remote_id_idx:
+            columns:
+                - remote_id
+        FULLTEXT_pv:
+            flags: fulltext
+            columns: name
+    id:
+        id:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        weight:
+            type: float
+            nullable: false
+            precision: 8
+            scale: 2
+        link:
+            type: string
+            nullable: false
+        imageLink:
+            type: string
+            nullable: false
+        remoteId:
+            type: string
+            nullable: false
+        price:
+            type: float
+            nullable: true
+        currencyId:
+             type: integer
+             nullable: true
+    lifecycleCallbacks: {  }

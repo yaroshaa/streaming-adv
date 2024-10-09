@@ -1,0 +1,49 @@
+@mixin feedbackTag($name, $main-background-color, $main-text-color) {
+    .tag-wrap-#{$name} {
+        flex: 0 0 auto;
+        display: inline-block;
+        padding-bottom: 5px;
+        margin: 7px;
+        border-bottom: 2px solid transparent;
+
+        .tag {
+            background: $main-background-color;
+            color: $main-text-color;
+            border-radius: 50em;
+            padding: 5px 12px;
+            font-size: 12px;
+            line-height: 100%;
+            border: 2px solid transparent;
+
+            &:hover {
+                color: $--color-white;
+                background: $--color-base-dark;
+                border: 2px solid $main-background-color;
+            }
+        }
+
+        &--active {
+            padding-bottom: 5px;
+            border-bottom: 2px solid $main-background-color;
+        }
+    }
+}
+
+$tags: (
+    'electric-green': $--background-color-electric-green,
+    'orange': $--background-color-orange,
+    'red': $--background-color-red,
+    'turquoise': $--background-color-turquoise,
+    'yellow': $--background-color-yellow,
+    'blue': $--background-color-blue,
+    'pink': $--background-color-pink,
+    'tiffany': $--background-color-tiffany,
+    'green': $--background-color-green,
+    'cyan': $--background-color-cyan,
+    'coral': $--background-color-coral,
+    'white': $--background-color-white
+);
+
+@each $name, $color in $tags {
+    @include feedbackTag($name, $color, #191932)
+}

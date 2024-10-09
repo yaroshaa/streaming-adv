@@ -1,0 +1,57 @@
+App\Entities\ExchangeRate:
+    type: entity
+    table: exchange_rates
+    repositoryClass: App\Repositories\ExchangeRatesRepository
+    indexes:
+        exchange_rate_from_id_foreign:
+            columns:
+                - from_id
+        exchange_rate_to_id_foreign:
+            columns:
+                - to_id
+    id:
+        id:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        createdAt:
+            type: datetime
+            nullable: true
+            column: created_at
+        updatedAt:
+            type: datetime
+            nullable: true
+            column: updated_at
+            gedmo:
+                timestampable:
+                    on: update
+        rate:
+            type: float
+            nullable: false
+    manyToOne:
+        from:
+            targetEntity: App\Entities\Currency
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                from_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        to:
+            targetEntity: App\Entities\Currency
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                to_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

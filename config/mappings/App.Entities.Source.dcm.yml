@@ -1,0 +1,31 @@
+App\Entities\Source:
+    type: entity
+    table: sources
+    repositoryClass: App\Repositories\SourceRepository
+    indexes:
+        source_remote_id_idx:
+            columns:
+                - remote_id
+    id:
+        id:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        remoteId:
+            type: bigint
+            nullable: false
+        iconLink:
+            type: string
+            nullable: true
+    lifecycleCallbacks: {  }

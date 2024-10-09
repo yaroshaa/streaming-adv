@@ -1,0 +1,31 @@
+@include b(pagination) {
+    @include m(transparent) {
+        background-color: $--color-base-dark-hover;
+        ul, li {
+            background-color: $--color-base-dark-hover;
+        }
+        button {
+
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                color: $--pagination-hover-color;
+            }
+
+            &:disabled {
+                color: $--pagination-button-disabled-color;
+                background-color: $--color-base-dark-hover;
+                cursor: not-allowed;
+            }
+        }
+        .btn-prev,
+        .btn-next {
+            background-color: $--color-base-dark-hover;
+            color: $--pagination-button-color;
+
+        }
+    }
+}

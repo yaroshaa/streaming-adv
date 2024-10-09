@@ -1,0 +1,21 @@
+App\Entities\Warehouse:
+    type: entity
+    table: warehouses
+    repositoryClass: App\Repositories\WarehouseRepository
+    id:
+        id:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+    lifecycleCallbacks: { }

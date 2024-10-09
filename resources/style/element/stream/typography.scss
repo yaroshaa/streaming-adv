@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5 {
+    color: $--color-white;
+    font-weight: $--font-weight-bolder;
+    font-family: "Open Sans", Serif;
+    font-style: normal;
+}
+
+h1 {
+    font-size: $--font-size-large;
+    line-height: 24px;
+}
+
+h2 {
+    font-size: $--font-size-medium
+}
+
+h3 {
+    font-size: $--font-size-base;
+}
+
+h4 {
+    font-size: $--font-size-small;
+}
+
+h5 {
+    font-size: $--font-size-extra-small;
+}

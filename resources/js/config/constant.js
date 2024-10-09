@@ -1,0 +1,18 @@
+// order status
+const ORDER_STATUS_NEW = 'new';
+const ORDER_STATUS_PAID = 'paid';
+const ORDER_STATUS_PACKING = 'packing';
+const ORDER_STATUS_DELIVERY = 'delivery';
+const ORDER_STATUS_DELIVERED = 'delivered';
+const ORDER_STATUS_CLOSED = 'closed';
+const ORDER_STATUS_RETURNED = 'returned';
+
+export {
+    ORDER_STATUS_NEW,
+    ORDER_STATUS_PAID,
+    ORDER_STATUS_PACKING,
+    ORDER_STATUS_DELIVERY,
+    ORDER_STATUS_DELIVERED,
+    ORDER_STATUS_CLOSED,
+    ORDER_STATUS_RETURNED,
+};

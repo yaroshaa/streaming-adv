@@ -1,0 +1,12 @@
+export const BACKGROUND_COLOR_ELECTRIC_GREEN = 'electric-green';
+export const BACKGROUND_COLOR_ORANGE = 'orange';
+export const BACKGROUND_COLOR_RED = 'red';
+export const BACKGROUND_COLOR_TURQUOISE = 'turquoise';
+export const BACKGROUND_COLOR_YELLOW = 'yellow';
+export const BACKGROUND_COLOR_BLUE = 'blue';
+export const BACKGROUND_COLOR_PINK = 'pink';
+export const BACKGROUND_COLOR_TIFFANY = 'tiffany';
+export const BACKGROUND_COLOR_GREEN = 'green';
+export const BACKGROUND_COLOR_CYAN = 'cyan';
+export const BACKGROUND_COLOR_CORAL = 'coral';
+export const BACKGROUND_COLOR_WHITE = 'white';
